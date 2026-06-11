@@ -4,6 +4,10 @@
 
 Converts Adobe Flash SWF files to video.
 
+## Testing
+
+This branch is for testing and experimenting with different features or elements that need polishing.  You're free to do what you want here.
+
 ## Binaries
 
 The latest stable release of Swivel can be found at <https://www.newgrounds.com/wiki/creator-resources/flash-resources/swivel?path=/wiki/creator-resources/flash-resources/swivel>.
