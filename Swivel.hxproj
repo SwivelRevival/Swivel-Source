@@ -8,8 +8,8 @@
     <movie fps="30" />
     <movie width="930" />
     <movie height="590" />
-    <movie version="27" />
-    <movie minorVersion="0" />
+    <movie version="51" />
+    <movie minorVersion="5" />
     <movie platform="AIR" />
     <movie background="#FFFFFF" />
   </output>
@@ -26,11 +26,11 @@
     <option noInlineOnDebug="False" />
     <option mainClass="com.newgrounds.swivel.Swivel" />
     <option enabledebug="True" />
-    <option additional="-swf-version 11.4" />
+    <option additional="-swf-version 51.5" />
   </build>
   <!-- haxelib libraries -->
   <haxelib>
-    <library name="air3" />
+    <library name="air" />
   </haxelib>
   <!-- Class files to compile (other referenced classes will automatically be included) -->
   <compileTargets>
