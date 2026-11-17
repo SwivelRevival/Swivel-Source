@@ -9,8 +9,8 @@ The current version release can be found here [Swivel Source](https://github.com
 
 ## Building from source
 
-Swivel is built using the [Haxe](http://www.haxe.org) programming language.
-Run `haxe Swivel.hxml` to build, then run `PackageApp.bat` to package the app.
+Swivel is built using the [Haxe (Version 3)](http://www.haxe.org) programming language.
+Run `haxe Swivel.hxml` to build, then run `PackageApp.bat` to package the app (or PackageApp.sh on macOS).
 
 The current source will have regressions from the binary release on Newgrounds;
 I'm trying to get everything working again!
