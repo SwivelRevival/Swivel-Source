@@ -45,10 +45,10 @@ class SplashScreen extends Component {
 	private function addedToStageHandler(e) {
 		var url =
 		switch(e.target.name) {
-			case "swivelButton":	"http://www.newgrounds.com/swivel";
-			case "ngButton":		"http://www.newgrounds.com";
-			case "haxeButton":		"http://www.haxe.org";
-			case "ffmpegButton":	"http://www.ffmpeg.org";
+			case "swivelButton":	"https://www.newgrounds.com/wiki/creator-resources/animation-resources/swivel-flash-to-video";
+			case "ngButton":		"https://www.newgrounds.com/";
+			case "haxeButton":		"https://haxe.org/";
+			case "ffmpegButton":	"https://ffmpeg.org/";
 			default:				null;
 		}
 		if (url != null) {
