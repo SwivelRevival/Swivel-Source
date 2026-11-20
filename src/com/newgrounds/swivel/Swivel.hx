@@ -399,8 +399,8 @@ class Swivel extends Application
 		untyped creditsText._implComponent.scrollRect = new flash.geom.Rectangle(0, creditsText._implComponent.scrollRect.y+1, 300, 225);
 	}
 	
-	private function helpClickHandler(_) flash.Lib.getURL(new flash.net.URLRequest("http://www.newgrounds.com/swivel"));
-	private function ngUpsellClickHandler(_) flash.Lib.getURL(new flash.net.URLRequest("http://www.newgrounds.com/projects/movies/submit"));
+	private function helpClickHandler(_) flash.Lib.getURL(new flash.net.URLRequest("https://github.com/Herschel/Swivel"));
+	private function ngUpsellClickHandler(_) flash.Lib.getURL(new flash.net.URLRequest("https://www.newgrounds.com/supporter"));
 	
 	private function addClickHandler(e) : Void {
 		// TODO: create File class
@@ -750,6 +750,8 @@ class Swivel extends Application
 		flash.Lib.current.removeEventListener(flash.events.Event.ENTER_FRAME, aboutFrameHandler);
 		flash.Lib.current.stage.frameRate = 30;
 	}
+	
+	//TODO - Update contact and license info
 	private function contactClickHandler(_) flash.Lib.getURL(new flash.net.URLRequest("mailto:mike@newgrounds.com"));
 	private function licenseClickHandler(_) File.applicationDirectory.resolvePath("license.txt").openWithDefaultApplication();
 	
