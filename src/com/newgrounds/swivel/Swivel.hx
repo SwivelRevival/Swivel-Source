@@ -399,7 +399,7 @@ class Swivel extends Application
 		untyped creditsText._implComponent.scrollRect = new flash.geom.Rectangle(0, creditsText._implComponent.scrollRect.y+1, 300, 225);
 	}
 	
-	private function helpClickHandler(_) flash.Lib.getURL(new flash.net.URLRequest("https://github.com/Herschel/Swivel"));
+	private function helpClickHandler(_) flash.Lib.getURL(new flash.net.URLRequest("https://github.com/SwivelRevival/Swivel-Source"));
 	private function ngUpsellClickHandler(_) flash.Lib.getURL(new flash.net.URLRequest("https://www.newgrounds.com/supporter"));
 	
 	private function addClickHandler(e) : Void {
