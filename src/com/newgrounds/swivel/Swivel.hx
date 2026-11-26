@@ -56,7 +56,7 @@ import haxe.io.Bytes;
 import haxe.io.BytesInput;
 import haxe.io.Input;
 
-@:xml("SwivelHuey.xml") @:version("1.11")
+@:xml("SwivelHuey.xml") @:version("1.16")
 class Swivel extends Application
 {
 	@bindable private var _controller : SwivelController;
@@ -252,10 +252,16 @@ class Swivel extends Application
 					
 				case "t":
 					_controller.transparentBackground = true;
+				
+				case "png":
+					_controller.pngFile = _cmdLineDirectory.resolvePath( StringTools.trim(args.shift()) );
+					
+				case "k":
+					_controller.keyframeEvery = Std.parseInt(args.shift());
 					
 				case "o":
 					_controller.outputFile = _cmdLineDirectory.resolvePath( StringTools.trim(args.shift()) );
-					
+				
 				default: throw('Invalid switch $sw');
 			}
 		} else {
@@ -278,7 +284,7 @@ class Swivel extends Application
 
 	private override function init() : Void {
 		#if !debug
-			if(!_isCmdLine) ui.add(new SplashScreen());
+			//if(!_isCmdLine) ui.add(new SplashScreen());
 		#end
 
 		_previewGenerator = new PreviewGenerator();

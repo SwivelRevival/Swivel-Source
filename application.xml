@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<application xmlns="http://ns.adobe.com/air/application/27.0">
+<application xmlns="http://ns.adobe.com/air/application/29.0">
 	
 	<id>com.newgrounds.swivel.Swivel</id>
-	<versionNumber>1.12</versionNumber>
+	<versionNumber>1.16</versionNumber>
 	<filename>Swivel</filename>
+	<architecture>64</architecture>
 	
 	<name>Swivel</name>
 	<description>SWF-to-video converter</description>

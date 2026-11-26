@@ -36,9 +36,9 @@ class BitmapSmoothingMutator implements ISWFMutator
 	private function setSmoothInStyles( fillStyles : Array<FillStyle> ) {
 		for(i in 0...fillStyles.length) {
 			switch(fillStyles[i]) {
-				case FSBitmap(id, matrix, smooth, repeat):
+				case FSBitmap(id, matrix, repeat, smooth):
 					if(smooth == false)
-						fillStyles[i] = FSBitmap(id, matrix, true, repeat);
+						fillStyles[i] = FSBitmap(id, matrix, repeat, true);
 
 				default:
 			}

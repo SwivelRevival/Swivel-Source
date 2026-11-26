@@ -248,6 +248,11 @@ class SWFRecorder {
 		_window.stage.align = StageAlign.TOP_LEFT;
 		_window.stage.scaleMode = StageScaleMode.NO_SCALE;
 
+		// Reset mask position, in case someone changes it by doing something like parent.mask.x = ...
+		// The camera introduced in Animate CC does that, for example, which results in cropped output (#1).
+		_mask.x = 0;
+		_mask.y = 0;
+
 		if(recording) {
 			onFrameCaptured.dispatch( drawFrame() );
 		}

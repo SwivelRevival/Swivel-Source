@@ -284,7 +284,7 @@
 							<label text="Render Quality" x="115" y="369" font="Swis721 Cn BT" letterSpacing="1" size="14" bold="true" color="0x425137"/>
 							<label text="Controls render quality of the stage" x="116" y="386" font="AdvoCut_10pt_st" size="10" color="0x425137"/>
 							
-							<slider x="438" y="376" minimum="0" maximum="2" step="1" labelX="211" labelY="0" font="Swis721 Cn BT" letterSpacing="1" size="12" bold="true" color="0x425137" labelFunc="qualitySliderFunc" name="qualitySlider">
+							<slider x="438" y="376" minimum="0" maximum="2" value="2" step="1" labelX="211" labelY="0" font="Swis721 Cn BT" letterSpacing="1" size="12" bold="true" color="0x425137" labelFunc="qualitySliderFunc" name="qualitySlider">
 								<image source="sliderTrack"/>
 								<nub property="x"><image source="btnSliderNubOver" y="2"/></nub>
 							</slider>
@@ -437,7 +437,7 @@
 						
 						<image source="dummybar" x="97" y="372"/>
 						
-						<slider x="438" y="432" minimum="262144" maximum="25165824" step="512" labelX="211" labelY="0" font="Swis721 Cn BT" letterSpacing="1" size="12" bold="true" color="0x425137" labelFunc="videoBitrateLabelFunc" name="videoBitrateSlider" value="4194304">
+						<slider x="438" y="432" minimum="262144" maximum="25165824" step="512" labelX="211" labelY="0" font="Swis721 Cn BT" letterSpacing="1" size="12" bold="true" color="0x425137" labelFunc="videoBitrateLabelFunc" name="videoBitrateSlider" value="15728640">
 							<image source="sliderTrack"/>
 							<nub property="x"><image source="btnSliderNubOver" y="2"/></nub>
 						</slider>

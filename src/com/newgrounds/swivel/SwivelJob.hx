@@ -36,7 +36,7 @@ class SwivelJob extends Binding.Bindable
 	public function new(file : File, swf : SwivelSwf) {
 		super();
 		renderQuality = High;
-		forceBitmapSmoothing = true;
+		forceBitmapSmoothing = false;
 		this.file = file;
 		this.swf = swf;
 		duration = frameRange(1,swf.numFrames);
